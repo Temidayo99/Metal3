@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: relative;
+    /* height: 70vh; */
+}
+.header:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background-image: url('./img/bg-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    /* box-shadow: rgba(0,0,0,0.4) 0px 3px 5px; */
+    /* background: rgb(0,0,0); */
+    color: #fff;
+}
+.list-item {
+    list-style-type: none;
+    display: inline-flex;
+    cursor: pointer;
+}
+.item {
+    padding-left: 60px;
+}
+.item:hover {
+    color: #01EEC4;
+}
+
+.hero {
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hero-container, .bg-image {
+    position: relative;
+}
+/* #header {
+    background-image: url("/img/kub.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+} */
+.hero-container{
+    /* position: absolute; */
+    /* padding: 150px 100px; */
+    /* padding-left: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-title{
+    color: #01EEC4;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+.hero-text {
+    /* color: #fff; */
+    font-size: 1.2rem;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.bg-image {
+    height: 300px;
+    padding-right: 100px;
+    position: absolute;
+}
+.buttons {
+    padding-top: 20px;
+}
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.getStarted {
+    background-color: #01EEC4;
+    color: #000;
+    margin-right: 15px;
+    width: 150px;
+}
+.userGuide {
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 200px;
+}
+.learn-btn {
+    background-color: #01EEC4;
+    color: #000;
+    width: 150px;
+    margin-top: 30px;
+}
+/* #about {
+    padding-top: 30px;
+}
+#about h2{
+    text-align: center;
+} */
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.about-img {
+    height: 300px;
+    padding-right: 100px;
+}
+.about-us {
+    width: 700px;
+    padding-left: 100px;
+}
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.faq-title {
+    margin-bottom: 20px;
+}
+.faq-content {
+    width: 410px;
+}
+details {
+    background-color: #ccc;
+    /* color: #fff; */
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ccc;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+summary {
+    background-color: #eee;
+    position: relative;
+    padding: 1.5em 1.3rem;
+    list-style: none;
+    outline: none;
+    /* display: flex;
+    justify-content: space-between; */
+    transition: height 1s ease;
+    cursor: pointer;
+    padding-right: 80px;
+}
+summary::after{
+    position: absolute;
+    content: "\002B";
+    right: 10px;
+}
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+details[open] summary::after {
+    position: absolute;
+    content: "\00D7";
+    right: 20px;
+}
+details[open] div {
+    padding: .5em 1em;
+}
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: -10px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.footer {
+    background: #252525;
+    padding: 30px;
+    color: #fff;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.contact {
+    width: 800px;
+}
+.quick-links h3{
+    padding-bottom: 10px;
+}
+.quick-links p{
+    padding-bottom: 10px;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.links .fa-brands{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+    color: #fff;
+}
