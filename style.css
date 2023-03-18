@@ -125,6 +125,8 @@
     margin-bottom: 40px;
 }
 .faq-title {
+    text-align: center;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 .faq-content {
@@ -249,6 +251,9 @@ details[open] summary ~ * {
         padding-left: 13px;
         padding-right: 13px;
     }
+    .faq-content {
+        width: unset;
+    }
     .footer-container {
         flex-direction: column;
         justify-content: center;
@@ -259,12 +264,15 @@ details[open] summary ~ * {
     }
     .contact {
         width: unset;
+        justify-content: center;
+        text-align: center;
     }
     .contact h2 {
         padding-top: 10px;
     }
     .quick-links {
         margin-top: 40px;
+        text-align: center;
     }
     .links {
         margin-top: 20px;
