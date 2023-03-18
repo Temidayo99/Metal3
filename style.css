@@ -28,8 +28,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    /* box-shadow: rgba(0,0,0,0.4) 0px 3px 5px; */
-    /* background: rgb(0,0,0); */
     color: #fff;
 }
 .list-item {
@@ -46,10 +44,6 @@
 
 .hero {
     position: relative;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -57,19 +51,7 @@
 .hero-container, .bg-image {
     position: relative;
 }
-/* #header {
-    background-image: url("/img/kub.jpg");
-    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 400px;
-    position: relative;
-} */
 .hero-container{
-    /* position: absolute; */
-    /* padding: 150px 100px; */
-    /* padding-left: 100px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,7 +63,6 @@
     padding-bottom: 10px;
 }
 .hero-text {
-    /* color: #fff; */
     font-size: 1.2rem;
     color: #fff;
     padding-bottom: 20px;
@@ -120,12 +101,6 @@
     width: 150px;
     margin-top: 30px;
 }
-/* #about {
-    padding-top: 30px;
-}
-#about h2{
-    text-align: center;
-} */
 .about {
     display: flex;
     flex-direction: row;
@@ -170,8 +145,6 @@ summary {
     padding: 1.5em 1.3rem;
     list-style: none;
     outline: none;
-    /* display: flex;
-    justify-content: space-between; */
     transition: height 1s ease;
     cursor: pointer;
     padding-right: 80px;
@@ -239,4 +212,61 @@ details[open] summary ~ * {
     padding: 20px;
     font-size: 30px;
     color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .list-container {
+        display: none;
+    }
+    .getStarted {
+        margin-right: 5px;
+        width: 120px;
+    }
+    .userGuide {
+        background-color: #fff;
+        border: 1px solid #000;
+        width: 180px;
+    }
+    .about {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-us {
+        width: unset;
+        padding-left: unset;
+        margin-bottom: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-us h2 {
+        text-align: center;
+    }
+    .about-img {
+        padding-right: unset;
+        height: 200px;
+    }
+    .faq {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact {
+        width: unset;
+    }
+    .contact h2 {
+        padding-top: 10px;
+    }
+    .quick-links {
+        margin-top: 40px;
+    }
+    .links {
+        margin-top: 20px;
+    }
 }
