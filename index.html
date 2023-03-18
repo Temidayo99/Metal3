@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -52,13 +55,21 @@
     <main>
         <section class="about">
             <div class="about-us">
-                <h2>Who We Are?</h2>
+                <h2>Why Metal<sup>3</sup>?</h2>
                 <br>
-                <p>A PaaS (platform as a service) that provides resources to allow for 
-                    simple implementation, deployment and management of raw resources  
-                    on metal servers. <em>Metal<sup>3</sup></em>, pronounced metal cubed, is an 
-                    open-source tool for creating and setting up the bare metal.
+
+                <p><em>Metal<sup>3</sup></em> hopes to expand on the ironic technology already in place to offer
+                    a Kubernetes native API for managing bare metal servers. We aim to provide a widely used method for managing
+                    the lifespan of bare metal hosts that is simple to use and integrates well with Kubernetes and also, to
+                    eliminate the requirement for specialised hardware management programs by offering APIs and tools for managing bare
+                    metal hosts.
                 </p>
+                <br>
+                <p>Metal<sup>3</sup> scales and manages large numbers of bare metal hosts as part of its goals. 
+                    It is essential for users with large workloads who need to deploy projects using containers 
+                    like Kubernetes and manage infrastructure across multiple data centres or regions.
+                </p>
+
                 <button class="btn learn-btn">Learn More</button>
             </div>
 
@@ -71,34 +82,53 @@
             <h2 class="faq-title">Frequently Asked Questions</h2>
             <details>
                 <summary>
-                    Lorem ipsum dolor sit amet consectetur?
+                    What is Bare Metal Operator?
                 </summary>
                     <div class="faq-content"> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi reprehenderit, debitis ut quaerat rem!
+                        The Kubernetes operator, known as the bare metal host opertor [BMH Operator], oversees
+                        the lifetime of bare metal hosts. It is responsible for finding bare metal hosts, installing an operating system, 
+                        and controlling their configuration and updates.
                     </div>
             </details>
             <details>
                 <summary>
-                    Lorem ipsum dolor sit amet consectetur?
+                    What is Hardware Manager Operator?
                 </summary>
                     <div class="faq-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi reprehenderit, debitis ut quaerat rem!
+                        This Kubernetes operator finds and makes bare metal host hardware inventory data available. 
+                        Regardless of the hardware
+                         type or manufacturer, it offers Kubernetes a standardised way to access hardware data.
                     </div>
             </details>
             <details>
                 <summary>
-                    Lorem ipsum dolor sit amet consectetur?
+                    What is Cluster API Provider Metal³?
                 </summary>
                     <div class="faq-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi reprehenderit, debitis ut quaerat rem!
+                        By utilising Metal3, this Kubernetes Cluster API provider enables Kubernetes to 
+                        control the lifespan of bare metal hosts. 
+                        For Kubernetes to establish and manage bare metal hosts as a component of a Kubernetes cluster, 
+                        it offers an API and a set of tools.
                     </div>
             </details>
             <details>
                 <summary>
-                    Lorem ipsum dolor sit amet consectetur?
+                    What is Metal³ Bootstrap?
                 </summary>
                     <div class="faq-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi reprehenderit, debitis ut quaerat rem!
+                        A Kubernetes cluster can be started on bare metal hosts with the aid of this tool. In addition, 
+                        it offers a collection of templates and 
+                        scripts for automatically setting up hosts, installing Kubernetes, and adding them to a group.
+                    </div>
+            </details>
+            <details>
+                <summary>
+                    What is Metal³ Machine Config Operator?
+                </summary>
+                    <div class="faq-content">
+                        This Kubernetes operator controls how the operating system is set up on bare metal hosts. It offers 
+                        a mechanism to alter the hosts' networking, storage, and other settings. Moreover, it can repair and 
+                        upgrade hosts as necessary.
                     </div>
             </details>
         </section>
@@ -112,12 +142,11 @@
                 <img src="img/metal-logo2.png" alt="logo" width="50px" height="50px" class="logo2">
                 <h2>About Us</h2>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Eos quas commodi eius ipsum quasi eligendi eum odio minus est 
-                    repudiandae molestias perferendis assumenda, tempore culpa maxime 
-                    neque veritatis itaque voluptas? Qui, eligendi? Ullam libero odio et hic, 
-                    aut iure facere ipsam, illum eveniet odit voluptatibus! 
-                    Totam esse corporis cumque expedita!</p>
+                <p>A PaaS (platform as a service) that provides resources to allow for 
+                        simple implementation, deployment and management of raw resources  
+                        on metal servers. <em>Metal<sup>3</sup></em>, pronounced metal cubed, is an 
+                        open-source tool for creating and setting up the bare metal.
+                </p>
             </div>
             <div class="quick-links">
                 <h3>Quick Links</h3>

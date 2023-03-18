@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+}
 .header{
     position: relative;
     /* height: 70vh; */
@@ -129,14 +132,12 @@
     font-size: 22px;
     margin-bottom: 20px;
 }
-.faq-content {
-    width: 410px;
-}
 details {
     background-color: #ccc;
     /* color: #fff; */
     font-size: 1.2rem;
     border-bottom: 1px solid #ccc;
+    width: 500px;
 }
 details > summary::-webkit-details-marker {
     display: none;
@@ -254,7 +255,7 @@ details[open] summary ~ * {
         padding-left: 13px;
         padding-right: 13px;
     }
-    .faq-content {
+    details {
         width: unset;
     }
     .footer-container {
