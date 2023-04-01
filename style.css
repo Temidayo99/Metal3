@@ -33,6 +33,9 @@ body {
     padding: 15px 40px;
     color: #fff;
 }
+.list-container .icon {
+    display: none;
+}
 .list-item {
     list-style-type: none;
     display: inline-flex;
@@ -151,6 +154,7 @@ summary {
     transition: height 1s ease;
     cursor: pointer;
     padding-right: 80px;
+    width: 500px;
 }
 summary::after{
     position: absolute;
@@ -193,14 +197,13 @@ details[open] summary ~ * {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
+    /* padding-left: 60px;
+    padding-right: 60px; */
 }
 .contact {
-    width: 800px;
+    width: 700px;
 }
-.quick-links h3{
-    padding-bottom: 10px;
-}
-.quick-links p{
+.quick-links h3, .quick-links p{
     padding-bottom: 10px;
 }
 .social {
@@ -209,6 +212,8 @@ details[open] summary ~ * {
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    /* padding-left: 60px;
+    padding-right: 60px; */
 }
 .links .fa-brands{
     text-decoration: none;
@@ -217,10 +222,34 @@ details[open] summary ~ * {
     color: #fff;
 }
 
-@media only screen and (max-width: 768px) {
-    .list-container {
+@media only screen and (max-width: 992.9px) {
+    .list-container #myLinks {
         display: none;
     }
+    .list-container .icon {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+      
+    .list-container a .icon {
+        background: black;
+        display: block;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+      
+    .list-container a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+      
+    /* .list-container {
+        display: none;
+    } */
     .hero-text {
         font-size: 1rem;
     }
@@ -243,6 +272,7 @@ details[open] summary ~ * {
         margin-bottom: 60px;
         padding-left: 20px;
         padding-right: 20px;
+        /* text-align: center; */
     }
     .about-us h2 {
         text-align: center;
@@ -256,7 +286,11 @@ details[open] summary ~ * {
         padding-right: 13px;
     }
     details {
-        width: unset;
+        width: 320px;
+        font-size: 14px;
+    }
+    summary {
+        width: 320px;
     }
     .footer-container {
         flex-direction: column;

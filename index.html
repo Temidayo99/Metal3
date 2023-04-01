@@ -15,19 +15,22 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar topnav">
             <div class="logo">
                 <a href="#">
                     <img src="img/metal-logo2.png" alt="logo" width="50px" height="50px" class="logo">
                 </a>
             </div>
             <div class="list-container">
-                <ul id="links" class="list-item">
+                <ul id="myLinks" class="list-item">
                     <li class="item">Blog</li>
                     <li class="item">Community Resources</li>
                     <li class="item">Documentation</li>
                     <li class="item">Try It!</li>
                 </ul>
+                <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
             <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -70,7 +73,10 @@
                     like Kubernetes and manage infrastructure across multiple data centres or regions.
                 </p>
 
-                <button class="btn learn-btn">Learn More</button>
+                <div class="btn-container">
+                    <button class="btn learn-btn">Learn More</button>
+                </div>
+                
             </div>
 
             <div>
@@ -155,7 +161,6 @@
             </div>
         </div>
         <hr>
-        <div>
             <div class="social">
                 <div>
                     <p>Copyright @ 2023 All Rights Reserved</p>
@@ -173,20 +178,31 @@
                     
                 </div>
             </div>
-            
-        </div>
     </footer>
 
     <script>
-        function myFunction() {
-          var bar = document.getElementById("links");
-          if (bar.style.display === "block") {
-            bar.style.display = "none";
-          } else {
-            bar.style.display = "block";
-          }
-        }
-        </script>
+        // function myFunction() {
+        //   var bar = document.getElementById("mylinks");
+        //   if (bar.style.display === "block") {
+        //     bar.style.display = "none";
+        //   } else {
+        //     bar.style.display = "block";
+        //   }
+        // }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var bar = document.getElementById("mylinks");
+            if (bar) {
+                bar.addEventListener("click", function() {
+                if (bar.style.display === "block") {
+                    bar.style.display = "none";
+                } else {
+                    bar.style.display = "block";
+                }
+                });
+            }
+        });
+    </script>
         
 </body>
 </html>
