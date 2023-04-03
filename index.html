@@ -23,22 +23,18 @@
             </div>
             <div class="list-container">
                 <ul id="myLinks" class="list-item">
-                    <li class="item">Blog</li>
-                    <li class="item">Community Resources</li>
-                    <li class="item">Documentation</li>
-                    <li class="item">Try It!</li>
+                    <li class="item"><a href="#">Blog</a></li>
+                    <li class="item"><a href="#">Community Resources</a></li>
+                    <li class="item"><a href="#">Documentation</a></li>
+                    <li class="item"><a href="#">Try It!</a></li>
                 </ul>
-                <a href="javascript:void(0);" class="icon">
+                <a href="#" class="icon">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
-            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a> -->
         </nav>
 
         <section class="hero">
-            <!-- <img src="/img/kub.jpg" alt="lemurs" class="bg-image"/> -->
             <div class="hero-container">
                 <h1 class="hero-title">Metal<sup>3</sup></h1>
                 <p class="hero-text">Bare metal host provisioning for Kubernetes</p>
@@ -48,9 +44,6 @@
                 </div>
             </div>
 
-            <!-- <div>
-                <img src="/img/host.webp" alt="lemurs" class="bg-image"/>
-            </div> -->
         </section>
         
     </header>
@@ -181,8 +174,9 @@
     </footer>
 
     <script>
+        // const bar = document.getElementById("mylinks");
         // function myFunction() {
-        //   var bar = document.getElementById("mylinks");
+         
         //   if (bar.style.display === "block") {
         //     bar.style.display = "none";
         //   } else {
@@ -190,17 +184,15 @@
         //   }
         // }
 
-        document.addEventListener("DOMContentLoaded", function() {
-            var bar = document.getElementById("mylinks");
-            if (bar) {
-                bar.addEventListener("click", function() {
-                if (bar.style.display === "block") {
-                    bar.style.display = "none";
-                } else {
-                    bar.style.display = "block";
-                }
-                });
-            }
+        const navToggle = document.querySelector('.icon');
+        const navList = document.querySelector('#myLinks');
+
+        navToggle.addEventListener('click', function() {
+        if (navList.style.display === 'block') {
+            navList.style.display = 'none';
+        } else {
+            navList.style.display = 'block';
+        }
         });
     </script>
         
