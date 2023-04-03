@@ -31,6 +31,9 @@
                 <a href="#" class="icon">
                     <i class="fa fa-bars"></i>
                 </a>
+                <a href="#" class="closebtn">
+                    <i class="fa fa-times"></i>
+                </a>
             </div>
         </nav>
 
@@ -174,26 +177,34 @@
     </footer>
 
     <script>
-        // const bar = document.getElementById("mylinks");
-        // function myFunction() {
-         
-        //   if (bar.style.display === "block") {
-        //     bar.style.display = "none";
-        //   } else {
-        //     bar.style.display = "block";
-        //   }
-        // }
-
         const navToggle = document.querySelector('.icon');
+        const navClose = document.querySelector('.closebtn');
         const navList = document.querySelector('#myLinks');
 
         navToggle.addEventListener('click', function() {
-        if (navList.style.display === 'block') {
+        if (navList.style.display === 'block'){
+            navToggle.style.display = 'block';
             navList.style.display = 'none';
+            navClose.style.display = 'none';
         } else {
             navList.style.display = 'block';
+            navClose.style.display = 'block';
+            navToggle.style.display = 'none';
         }
         });
+
+        navClose.addEventListener('click', function() {
+        if (navList.style.display === 'block'){
+            navToggle.style.display = 'block';
+            navList.style.display = 'none';
+            navClose.style.display = 'none';
+        } else {
+            navList.style.display = 'block';
+            navClose.style.display = 'block';
+            navToggle.style.display = 'none';
+        }
+        });
+        
     </script>
         
 </body>
