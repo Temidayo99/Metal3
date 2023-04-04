@@ -115,17 +115,26 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-.about-img {
-    height: 300px;
-    padding-right: 100px;
+    padding: 80px 100px;
+    gap: 70px;
 }
 .about-us {
-    width: 700px;
-    padding-left: 100px;
+    justify-content: center;
+    align-items: center;
 }
+.mission {
+    justify-content: center;
+    align-items: center;
+}
+.vl {
+    border-left: 2px solid #01EEC4;
+    height: 400px;
+    position: absolute;
+    left: 55%;
+    /* margin-left: -3px; */
+    top: 75%;
+  }
+
 .faq {
     display: flex;
     flex-direction: column;
@@ -278,23 +287,20 @@ details[open] summary ~ * {
         border: 1px solid #000;
         width: 180px;
     }
+    .vl {
+        display: none;
+    }
     .about {
         flex-direction: column;
         justify-content: center;
+        padding: 60px 30px;
+        gap: unset;
     }
     .about-us {
-        width: unset;
-        padding-left: unset;
-        margin-bottom: 60px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-bottom: 50px;
     }
-    .about-us h2 {
+    .about-us h3, .mission h3 {
         text-align: center;
-    }
-    .about-img {
-        padding-right: unset;
-        height: 200px;
     }
     .faq {
         padding-left: 13px;
